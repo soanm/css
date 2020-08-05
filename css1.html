@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
+      <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .heading_img{
+            width: 100vw;
+            height:auto;
+            background-color: tomato;
+        }
+        .heading_img h1{
+            background-image: url("image/newimage.jpg");
+            color:transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            text-align: center;
+            padding:20px;
+            font-family: 'PT Sans Narrow', sans-serif;
+            background-size: 100% 100%;
+        }
+        .parent_div{
+            width: 100vw;
+            height:100vh;
+            background-color: teal;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .child_div{
+            width: 60vw;
+            height:50vh;
+            background-image: linear-gradient(140deg, rgba(255,255,255,0.9)50%,rgba(0,0,0,0.5)50%),url("image/newimage.jpg");
+            background-size: 100% 100%;
+
+    
+        }
+
+        /* THREE WAY TO CENTER DIV UNDER DIV  */
+
+    /* first one is  */
+
+      /* .parent_div{
+          display:flex;
+          justify-content: center;
+          align-items: center;
+      } */
+      /* second one is  */
+
+     /* .parent_div{
+         display: grid;
+         place-items: center;
+     } */
+
+     /* third one is  */
+     /* .parent_div{
+         position: relative;
+     }
+
+     .child_div{
+         position:absolute;
+         top:50%;
+         left:50%;
+         transform: translate(-50% ,-50%);
+     } */
+
+    </style>
+    </head>
+    <body>
+        <div class="heading_img">
+        <h1>!!! JAI SHREE RADHEKRISHNA !!!!</h1>
+        </div>
+        <!-- overlay in css  -->
+        <div class="parent_div">
+            <div class="child_div">
+
+            </div>
+        </div>
+
+    </body>
+</html>
