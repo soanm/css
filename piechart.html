@@ -1,0 +1,91 @@
+<!DOCTYPE htnl>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+            }
+           .main_div{
+               width:100vw;
+               height:100vh;
+               display:flex;
+               justify-content: center;
+               align-items: center;
+           }
+           .parent_div{
+               width:calc(100vw - 40vw);
+               height:calc(100vh - 30vh);
+               box-shadow: 0 0 20px rgba(0,0,0,0.5);
+               position: relative;
+           }
+           .main_div h2{
+               padding:20px;
+               font-size:25px;
+           }
+           .parent_div h3{
+               position: absolute;
+               bottom:0;
+               color:gray;
+               font-size:20px;
+               padding:20px;
+           }
+           .parent_div p{
+               position: absolute;
+               right:0;
+               bottom:0;
+               padding:20px;
+               text-align: right;
+           }
+           .parent_div span::after{
+               content: "";
+               display: inline-block;
+               width:5px;
+               height:5px;
+               border-radius: 50%;
+               background: currentColor;
+               margin:5px;
+               vertical-align: middle;
+           }
+           .piechart{
+               min-width:250px;
+               min-height:250px;
+               background: radial-gradient(circle closest-side,transparent 100%,white 0),
+               conic-gradient(from 180deg,
+               brown 0,
+               brown 30%,
+               yellow 0,
+               yellow 55%,
+               green 0,
+               green 85%,
+               red 0,
+               red 90%,
+               darkslateblue 0,
+               darkslateblue 100%);
+               margin-top:40px;
+           }
+        </style>
+    </head>
+    <body>
+        <div class="main_div">
+            
+            <div class="parent_div">
+                <h2>India Top 5 states with Highest corona states</h2>
+                <div class="piechart"></div>
+                <h3>India Corona Virus Cases till Now</h3>
+                <p>
+                    maharastra 468265<span style="color:tomato"></span><br>
+                    Tamil Nadu 856892<span style="color:greenyellow"></span><br>
+                    Andhra Pradesh<span style="color:brown"></span><br>
+                    Karnataka<span style="color:darkslateblue"></span><br>
+                    dehli <span style="color:deeppink"></span><br>
+                </p>
+                
+            </div>
+        </div>
+    </body>
+</html>
