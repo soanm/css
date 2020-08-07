@@ -5,12 +5,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width ,initial-sclae=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
         <style>
             *{
                 margin:0;
                 padding:0;
                 box-sizing: border-box;
+                
             }
+            /* body{
+                background-color: gold;
+            } */
             .main_div{
                 width:100vw;
                 height:30vh;
@@ -20,10 +25,23 @@
                 /* background-color: darkgray; */
             }
          h1{
-             color:darkgoldenrod;
+             color:transparent;
              font-size:65px;
              font-family: 'Red Rose', cursive;
              position: relative;
+             background-image: url("image/newimage.jpg");
+             mix-blend-mode: screen;
+             background-size: 100% 100%;
+             background-clip: text;
+             -webkit-background-clip: text;
+             -moz-background-clip: text;
+         }
+         h2{
+             color:darkgreen;
+             font-size:55px;
+             /* border-bottom:2px solid black; */
+             line-height:1.5;
+             text-align:center;
          }
          h1::before{
              content: "";
@@ -35,7 +53,7 @@
              height:25px;
             color:darkgoldenrod;
             transform: translateY(-50%);
-            background: radial-gradient(ellipse closest-side,transparent 100%,white 0),
+            background: radial-gradient(ellipse closest-side,transparent 100%,gold 0),
             conic-gradient(red,yellow,blue,brown,darkgray,darkgoldenrod);
 
          }
@@ -64,11 +82,61 @@
                color:yellow;
            }*/
 
+           .grand_div{
+               width:100vw;
+               height:auto;
+               
+           }
+           .parent_div{
+               height:auto;
+               margin:auto;
+               display:flex;
+               justify-content: space-around;
+               flex-wrap: wrap;
+           }
+           .child:first-child{
+               background-color: darkorchid;
+           }
+           .child:last-child{
+               background-color: darkred;
+
+           }
+           .child{
+               background-color: deeppink;
+               box-shadow: 0 0 20px #bac3c3;
+               flex:1 1 200px;
+               margin:20px;
+               
+          height:200px;
+           }
+           .child p{
+               color:white;
+               font-size:20px;
+               text-align: center;
+               padding:20px;
+               font-family: 'Roboto Condensed', sans-serif;
+               
+           }
+
         </style>
     </head>
     <body>
         <div class="main_div">
             <h1>MY RADHEKRISHNA</h1>
+        </div>
+        <div class="grand_div">
+            <h2>service</h2>
+            <div class="parent_div">
+                <div class="child">
+                    <p>peragraph</p>
+                </div>
+                <div class="child">
+                    <p>peragragh</p>
+                </div>
+                <div class="child">
+                    <p>peragreph</p>
+                </div>
+            </div>
         </div>
     </body>
 </html>
