@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>thunder csss</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+                font-family: 'Bebas Neue', cursive;
+
+                /* https://coolors.co/palettes/trending  */
+            }
+            html{
+                font-size:60.5%;
+            }
+            .main_div{
+                width:100vw;
+                height:100vh;
+                background-color:#222f3e;
+                display:grid;
+                place-items: center;
+
+            }
+            .center_div{
+                width:50%;
+                height:auto;
+
+            }
+            .center_div ul li{
+                color:white;
+                font-size:7rem;
+                list-style-type: none;
+                text-transform: uppercase;
+                padding:2rem;
+                color:#576574;
+                /* animation:name duration timing-function delay iteration  */
+                animation: light 1.3s linear infinite;
+            }
+            @keyframes light{
+                0%{
+                    color:#576574;
+
+                }
+                90%{
+                    color:#576574;
+
+                }
+                100%{
+                    
+                        color:#ffd500;
+                        text-shadow: 0 0 1rem #d35400, 0 0 7rem #d35400;
+
+                    }
+                
+            }
+            .center_div ul li:first-child{
+                padding-left: 0;
+            }
+            .center_div ul li:nth-child(1){
+                animation-delay: 0s;
+            }
+            .center_div ul li:nth-child(2){
+                animation-delay: 0.1s;
+            }
+            .center_div ul li:nth-child(3){
+                animation-delay: 0.3s;
+            }
+            .center_div ul li:nth-child(4){
+                animation-delay: 0.5s;
+            }
+            .center_div ul li:nth-child(5){
+                animation-delay: 0.7s;
+            }
+            .center_div ul li:nth-child(6){
+                animation-delay: 0.9s;
+            }
+            .center_div ul{
+                display:flex;
+                justify-content: center;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main_div">
+            <div class="center_div">
+                <ul>
+                    <li>t</li>
+                    <li>h</li>
+                    <li>u</li>
+                    <li>n</li>
+                    <li>d</li>
+                    <li>e</li>
+                    <li>r</li>
+                </ul>
+            </div>
+        </div>
+
+    </body>
+</html>
